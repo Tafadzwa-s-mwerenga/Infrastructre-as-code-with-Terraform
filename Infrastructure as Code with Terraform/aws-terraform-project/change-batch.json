@@ -1,0 +1,18 @@
+{
+    "Comment": "Add A record to point to Load Balancer",
+    "Changes": [
+      {
+        "Action": "UPSERT",
+        "ResourceRecordSet": {
+          "Name": "webonomics.com.",
+          "Type": "A",
+          "AliasTarget": {
+            "HostedZoneId": "Z0958884MH9PP5XTBQJK",
+            "DNSName": "ec2-13-60-31-19.eu-north-1.compute.amazonaws.com",
+            "EvaluateTargetHealth": false
+          }
+        }
+      }
+    ]
+  }
+  
